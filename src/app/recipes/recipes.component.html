@@ -10,14 +10,14 @@
 <ng-template #formBlock>
     <form (ngSubmit)="onSubmit()" #recipeForm="ngForm">
         <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name"
+          <label for="recipe-name">Name</label>
+          <input type="text" class="form-control" id="recipe-name" label="recipe-name"
                  [(ngModel)]="recipe.name" name="recipe-name">
         </div>
   
         <div class="form-group">
-            <label for="instructions">Instructions</label>
-            <input type="text" class="form-control" id="instructions"
+            <label for="recipe-instructions">Instructions</label>
+            <input type="text" class="form-control" id="recipe-instructions" label="recipe-instructions"
                    [(ngModel)]="recipe.instructions" name="recipe-instructions">
           </div>
   
